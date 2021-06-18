@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+p {
+  background-color: #DD3399;
+  border: 3px dotted #2218DC;
+}
+
+li {
+  hyphens: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

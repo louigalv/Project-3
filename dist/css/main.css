@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+p {
+  background-color: #DD3399;
+  border: 3px dotted #2218DC;
+}
+
+li {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Njc3MvbWFpbi5zY3NzIiwiLi4vLi4vcHJlZml4L21haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0Usc0JBQUE7QUNERjs7QURHQTtFQUNFLHlCQU5TO0VBT1QsMEJBQUE7QUNBRjs7QURFQTtFQUNFLHFCQUFBO01BQUEsaUJBQUE7VUFBQSxhQUFBO0FDQ0YiLCJmaWxlIjoibWFpbi5jc3MifQ== */
