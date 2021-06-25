@@ -39,7 +39,8 @@ header h2 {
 }
 
 .btn {
-  border: 0px solid #1c6ea4;
+  border: 0px solid;
+  background-image: linear-gradient(#DD3399 0%, #9356dc 100%);
   border-radius: 3rem;
   color: white;
   display: inline-block;
@@ -57,11 +58,9 @@ header h2 {
   box-shadow: -1px 7px 15px 5px;
   height: 4.5rem;
   width: 20rem;
-  -webkit-box-align: center;
   align-items: center;
   display: flex;
   gap: 1rem;
-  -webkit-box-pack: start;
   justify-content: flex-start;
   margin: 1.5rem auto;
 }
@@ -91,10 +90,6 @@ header h2 {
 
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .title {
@@ -109,7 +104,6 @@ p {
 }
 
 .icon__number {
-  -webkit-box-align: center;
   align-items: center;
   background-color: #9356dc;
   border-radius: 2rem;
@@ -117,7 +111,6 @@ p {
   display: flex;
   font-size: 0.8rem;
   height: 1.5rem;
-  -webkit-box-pack: center;
   justify-content: center;
   width: 1.5rem;
 }
@@ -155,7 +148,6 @@ h3 {
 }
 
 .restaurant__section .container {
-  -webkit-box-align: center;
   align-items: center;
   display: flex;
 }

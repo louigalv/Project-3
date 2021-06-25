@@ -1,5 +1,8 @@
 $main-clr: #DD3399;
-$border-clr: #2218DC;
+$border-clr: #9356dc;
+$font-stack: roboto;
+$background-clr: #f2f2f2;
+
 html {
   box-sizing: border-box;
 }
@@ -17,7 +20,7 @@ header {
   text-align: center;
 }
 .header__explore {
-  background-color: #f2f2f2;
+  background-color: $background-clr;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -26,7 +29,7 @@ header {
 }
 .header__location {
   background-color: #e5e5e5;
-  border: inset 0.1rem #f2f2f2;
+  border: inset 0.1rem $background-clr;
 }
 header h2 {
   font-size: 1.2rem;
@@ -34,7 +37,8 @@ header h2 {
 }
 
 .btn {
-  border: 0px solid #1c6ea4;
+  border: 0px solid;
+  background-image: linear-gradient($main-clr 0%,$border-clr 100%);
   border-radius: 3rem;
   color: white;
   display: inline-block;
@@ -46,16 +50,14 @@ header h2 {
   width: 14rem;
 }
   .nav__card {
-  background-color: #f2f2f2;
+  background-color: $background-clr;
   border-radius: 1.4rem;
   box-shadow: -1px 7px 15px 5px;
   height: 4.5rem;
   width: 20rem;
-  -webkit-box-align: center;
   align-items: center;
   display: flex;
   gap: 1rem;
-  -webkit-box-pack: start;
   justify-content: flex-start;
   margin: 1.5rem auto;
 }
@@ -81,10 +83,7 @@ header h2 {
 }
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+
 }
 .title {
   font-size: 1.5rem;
@@ -96,15 +95,13 @@ p {
   right: 0.75rem;
 }
 .icon__number {
-  -webkit-box-align: center;
   align-items: center;
-  background-color: #9356dc;
+  background-color: $border-clr;
   border-radius: 2rem;
   color: white;
   display: flex;
   font-size: 0.8rem;
   height: 1.5rem;
-  -webkit-box-pack: center;
   justify-content: center;
   width: 1.5rem;
 }
@@ -129,13 +126,12 @@ h3 {
   font-weight: 900;
 }
 .restaurant__section {
-  background-color: #f2f2f2;
+  background-color: $background-clr;
   margin-top: 3rem;
   padding-bottom: 5rem;
   padding-top: 1rem;
 }
 .restaurant__section .container {
-  -webkit-box-align: center;
   align-items: center;
   display: flex;
 }
