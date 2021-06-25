@@ -6,6 +6,9 @@ html {
 li {
   hyphens: auto;
 }
+body {
+  margin: 0 auto;
+}
 .header__explore {
   background-color: #f2f2f2;
   display: flex;
@@ -32,7 +35,7 @@ li {
   flex-direction: column;
 }
 .card__icon--full {
-  background-color: #9356dc, #ff79da;
+  background-color: $main-clr;
   font-size: 2rem;
   position: relative;
   bottom: 3.5rem;
@@ -42,9 +45,6 @@ li {
 
 .card__restaurant {
 background-color: white;
-border-radius: 1rem;
--webkit-box-shadow: -1px 7px 15px 5px rgb(0 0 0 / 30%);
-box-shadow: -1px 7px 15px 5px rgb(0 0 0 / 30%);
 height: 15rem;
 width: 20rem;
 }

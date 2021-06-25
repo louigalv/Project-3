@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 li {
@@ -8,20 +9,64 @@ li {
           hyphens: auto;
 }
 
+body {
+  margin: 0 auto;
+}
+
+.header__explore {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+  height: 18rem;
+  padding-top: 1rem;
+}
+
 .nav__card {
   background-color: #f2f2f2;
   border-radius: 1.4rem;
-  box-shadow: -1px 7px 15px 5px;
+  -webkit-box-shadow: -1px 7px 15px 5px;
+          box-shadow: -1px 7px 15px 5px;
   height: 4.5rem;
 }
 
 .nav__card:hover {
   background-color: #f2eafb;
-  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.15);
 }
 
 .nav__card:hover .fas {
   color: black;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Njc3MvbWFpbi5zY3NzIiwiLi4vLi4vcHJlZml4L21haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0Usc0JBQUE7QUNERjs7QURHQTtFQUNFLHFCQUFBO01BQUEsaUJBQUE7VUFBQSxhQUFBO0FDQUY7O0FERUE7RUFDRSx5QkFBQTtFQUNBLHFCQUFBO0VBQ0EsNkJBQUE7RUFDQSxjQUFBO0FDQ0Y7O0FEQ0E7RUFDRSx5QkFBQTtFQUNBLGlEQUFBO0FDRUY7O0FEQUE7RUFDRSxZQUFBO0FDR0YiLCJmaWxlIjoibWFpbi5jc3MifQ== */
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__icon--full {
+  background-color: #DD3399;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3.5rem;
+  left: 15rem;
+  width: 2rem;
+}
+
+.card__restaurant {
+  background-color: white;
+  height: 15rem;
+  width: 20rem;
+}
+/*# sourceMappingURL=main.css.map */
