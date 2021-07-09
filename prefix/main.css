@@ -11,14 +11,12 @@ body {
   font-family: roboto;
 }
 
+.header {
+  text-align: center;
+}
 .header__logo {
   padding: 0.25rem 0;
 }
-
-header {
-  text-align: center;
-}
-
 .header__explore {
   background-color: #f2f2f2;
   display: flex;
@@ -27,15 +25,18 @@ header {
   height: 18rem;
   padding-top: 1rem;
 }
-
 .header__location {
   background-color: #e5e5e5;
   border: inset 0.1rem #f2f2f2;
 }
-
-header h2 {
+.header__title {
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 700;
+}
+.header__title__img img {
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .btn {
