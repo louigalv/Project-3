@@ -33,7 +33,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
 }
-.header__title__img img {
+.header__img img {
   height: 15rem;
   object-fit: cover;
   width: 100%;
@@ -92,6 +92,36 @@ body {
 
 p {
   display: block;
+}
+
+.main {
+  background-color: #f2f2f2;
+  border-radius: 2.5rem 2.5rem 0 0;
+  margin-top: -2.5rem;
+  position: relative;
+}
+.main__title {
+  font-family: shrikhand;
+}
+.main__icon {
+  background-color: #f2f2f2;
+  float: right;
+  font-size: 2rem;
+  font-weight: 200;
+  position: relative;
+  right: 2rem;
+}
+
+.menu {
+  background-color: #f2f2f2;
+}
+.menu__background h1 h2 {
+  margin-left: 2rem;
+}
+.menu__subtitle h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
 }
 
 .title {
