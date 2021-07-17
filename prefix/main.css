@@ -13,6 +13,8 @@ body {
 
 .header {
   text-align: center;
+  background-color: #f2f2f2;
+  padding-bottom: 1rem;
 }
 .header__logo {
   padding: 0.25rem 0;
@@ -22,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  height: 18rem;
+  height: 10rem;
   padding-top: 1rem;
 }
 .header__location {
@@ -51,6 +53,12 @@ body {
   line-height: 0.4rem;
   padding: 1.5rem;
   width: 14rem;
+}
+.btn__order {
+  height: 3rem;
+  line-height: 0.2rem;
+  margin: 6rem;
+  width: 11rem;
 }
 
 .nav__card {
@@ -111,17 +119,35 @@ p {
   position: relative;
   right: 2rem;
 }
+.main__menu__background {
+  background-color: #f2f2f2;
+  border-radius: 2.5rem 2.5rem 0 0;
+  margin-top: -2.5rem;
+  position: relative;
+}
+.main__menu__background h1 {
+  margin-left: 2rem;
+}
+.main__menu__background h2 {
+  margin-left: 2rem;
+  border-bottom: 3px solid #99e2d0;
+  padding: 1rem;
+  width: 8rem;
+}
 
 .menu {
   background-color: #f2f2f2;
 }
-.menu__background h1 h2 {
+.menu__section h2 {
   margin-left: 2rem;
 }
 .menu__subtitle h2 {
   font-size: 1.2rem;
   font-weight: 200;
   padding-bottom: 1rem;
+}
+.menu__section {
+  flex-direction: column;
 }
 
 .title {
@@ -216,17 +242,68 @@ h3 {
   transition: 2s ease;
 }
 
+.menu {
+  background-color: #f2f2f2;
+}
+.menu__desserts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu__entrees {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu__main_dish {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu__item {
+  box-shadow: 1px 7px 15px 5px;
+  background-color: white;
+  border-radius: 1rem;
+  height: 3.25rem;
+  line-height: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  width: 18rem;
+}
+.menu__price {
+  font-size: 0.8rem;
+  position: relative;
+  float: right;
+  bottom: 3rem;
+  right: 0.5rem;
+}
+.menu__item h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  position: relative;
+  bottom: 0.5rem;
+}
+
 footer .container {
   display: flex;
+  flex-direction: column;
   height: 12rem;
   align-items: center;
   justify-content: space-around;
   background-color: #252525;
+  gap: 0.5rem;
 }
 
 footer a {
   color: #f2f2f2;
   text-decoration: none;
+}
+
+.footer__title {
+  font-family: shrikhand;
 }
 
 /*# sourceMappingURL=main.css.map */
