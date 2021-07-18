@@ -14,10 +14,10 @@ body {
 .header {
   text-align: center;
   background-color: #f2f2f2;
-  padding-bottom: 1rem;
 }
 .header__logo {
   padding: 0.25rem 0;
+  background-color: white;
 }
 .header__explore {
   background-color: #f2f2f2;
@@ -30,6 +30,8 @@ body {
 .header__location {
   background-color: #e5e5e5;
   border: inset 0.1rem #f2f2f2;
+  margin-top: 0;
+  padding: 1rem 0 1rem 0;
 }
 .header__title {
   font-size: 1.2rem;
@@ -39,6 +41,10 @@ body {
   height: 15rem;
   object-fit: cover;
   width: 100%;
+}
+
+.header i {
+  margin-right: 1rem;
 }
 
 .btn {
@@ -178,15 +184,16 @@ p {
 }
 
 .icon__new {
-  align-items: center;
   border-radius: 0.1rem;
   color: green;
-  display: flex;
+  background-color: #99E2D0;
+  text-align: center;
   font-weight: 500;
-  height: 2rem;
-  justify-content: center;
+  padding: 1rem 0;
+  top: 0;
+  right: 5%;
   width: 5rem;
-  position: relative;
+  position: absolute;
 }
 
 .card__text {
@@ -199,6 +206,7 @@ p {
   border-radius: 1rem;
   height: 15rem;
   width: 20rem;
+  position: relative;
   box-shadow: -1px 6px 13px 6px #616161;
 }
 
