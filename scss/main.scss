@@ -62,6 +62,11 @@ body {
   line-height: 0.4rem;
   padding: 1.5rem;
   width: 14rem;
+  &:hover {
+    transition-duration: 500ms;
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#ff88de, #9b63df);
+  }
 
 &__order  {
   height: 3rem;
@@ -95,15 +100,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.card__icon {
-  color: black;
-  border: solid 2px blue;
-  font-size: 2rem;
-  position: relative;
-  bottom: 3.5rem;
-  left: 15rem;
-  width: 2rem;
-}
+
 p {
   display: block;
 
@@ -144,19 +141,59 @@ p {
 }
 .menu {
   background-color: #f2f2f2;
+  flex-direction: column;
 
-  &__section h2 {
+  h2 {
     margin-left: 2rem;
   }
-  &__subtitle h2 {
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding-bottom: 1rem;
-  }
-  &__section  {
+  &__wrap {
+    align-items: center;
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
+  }
+  &__item {
+    box-shadow: 1px 7px 15px 5px;
+    background-color: white;
+    border-radius: 1rem;
+    height: 3.25rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 18rem;
+    display: flex;
+  }
+  // &__item:hover .overlay{
+  //   width: 4rem;
+  //   left: 14rem;
+  //   transition: 0.3s linear;
+  // }
+  // &__item:hover .check  {
+  //   transform: rotate(-360deg);
+  //   transition-duration: 0.5sec;
+  // }
+  // .overlay  {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-color: #99E2D0;
+  //   border-radius: 0 1rem 1rem 0;
+  //   height: 4.27rem;
+  //   overflow: hidden;  
+  // }
+  .price   {
+    width: 25%;
+  }
+  .check  {
+    color: blue;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+    width: 25%;
   }
 }
+
 .title {
   font-size: 1.5rem;
   font-family: roboto;
@@ -193,12 +230,13 @@ p {
   width: 5rem;
   position: absolute;
 }
+.card {
 
-.card__text {
+&__text {
   padding: 0 1rem;
   line-height: 0.5rem;
 }
-.card__restaurant {
+&__restaurant {
   background-color: white;
   border-radius: 1rem;
   height: 15rem;
@@ -206,6 +244,37 @@ p {
   position: relative;
   box-shadow: -1px 6px 13px 6px rgb(97, 97, 97);
   }
+  &__restaurant img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 10rem;
+    object-fit: cover;
+    position: relative;
+    width: 20rem;
+  }
+  &__icon--empty {
+    background-color: white;
+    font-size: 2rem;
+    position: relative;
+    bottom: 5.5rem;
+    left: 15rem;
+    width: 2rem;
+  }
+  &__icon--empty:hover {
+    opacity: 0.5sec; 
+    transition: 2sec ease;
+}
+  &__icon--full {
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    font-size: 2rem;
+    position: relative;
+    bottom: 3.5rem;
+    left: 15rem;
+    width: 2rem;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+}
 .restaurant__section {
   background-color: $background-clr;
   margin-top: 3rem;
@@ -222,13 +291,6 @@ p {
   gap: 2rem;
 
 }
-.card__restaurant img {
-  border-radius: 1rem 1rem 0rem 0rem;
-  height: 10rem;
-  object-fit: cover;
-  position: relative;
-  width: 20rem;
-}
 .restaurant__section a {
   text-decoration: none;
   color: black;
@@ -237,55 +299,42 @@ h3 {
   font-size: 1.2rem;
   font-weight: 900;
 }
-.card__restaurant :hover{
-  opacity:0.5;
-  transition: 2s ease;
-}
-.menu {
-  background-color: #f2f2f2;
+// .card__restaurant :hover{
+//   opacity:0.5;
+//   transition: 2s ease;
+// }
+// .menu {
+//   background-color: #f2f2f2;
 
-&__desserts {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-&__entrees {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-&__main_dish {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-  &__item {
-    box-shadow: 1px 7px 15px 5px;
-    background-color: white;
-    border-radius: 1rem;
-    height: 3.25rem;
-    line-height: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    width: 18rem;
-  }
-  &__price  {
-    font-size: 0.8rem;
-    position: relative;
-    float: right;
-    bottom: 3rem;
-    right: 0.5rem;
-  }
-  &__item h4  {
-    font-size: 0.8rem;
-    font-weight: 300;
-    position: relative;
-    bottom: 0.5rem;
-  }
-}
+//   &__desserts {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+//   }
+//   &__main_dish {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+    
+    
+//   }
+//   &__price  {
+//     font-size: 0.8rem;
+//     position: relative;
+//     float: right;
+//     bottom: 3rem;
+//     right: 0.5rem;
+//   }
+//   &__item h4  {
+//     font-size: 0.8rem;
+//     font-weight: 300;
+//     position: relative;
+//     bottom: 0.5rem;
+//   }
+// }
+
 footer .container{
 display: flex;
 flex-direction: column;
