@@ -18,7 +18,7 @@ body {
   background-color: $background-clr;
 
   &__logo {
-    padding: 0.25rem 0;
+    padding: 0.9rem 0;
     background-color: white;
   }
 
@@ -27,8 +27,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    height: 10rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
+    align-items: center;
   }
   &__location {
     background-color: #e5e5e5;
@@ -45,8 +46,11 @@ body {
     object-fit: cover;
     width: 100%;
   }
+  &__button {
+    padding: 1rem;
+  }
  }
- .header i{
+ .header i {
    margin-right: 1rem;
  }
 
@@ -157,43 +161,55 @@ p {
     background-color: white;
     border-radius: 1rem;
     height: 3.25rem;
-    line-height: 1rem;
+    line-height: 0.9rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     width: 18rem;
     display: flex;
   }
-  // &__item:hover .overlay{
-  //   width: 4rem;
-  //   left: 14rem;
-  //   transition: 0.3s linear;
-  // }
-  // &__item:hover .check  {
-  //   transform: rotate(-360deg);
-  //   transition-duration: 0.5sec;
-  // }
-  // .overlay  {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   background-color: #99E2D0;
-  //   border-radius: 0 1rem 1rem 0;
-  //   height: 4.27rem;
-  //   overflow: hidden;  
-  // }
-  .price   {
-    width: 25%;
+  &__price  {
+    width: 15%;
+    padding-top: 1.6rem;
   }
-  .check  {
-    color: blue;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transform: rotate(-90deg);
-    transition-duration: 0.5s;
-    width: 25%;
+  &__text {
+    width: 70%;
+  }
+  &__text h3  {
+    font-size: 0.9rem;
+    font-weight: 900;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__text h4  {
+    font-size: 0.8rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
-
+.overlay  {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 20%;
+ bottom: 4.8rem;
+ right: 0;
+ background-color: #99e2d0;
+ border-radius: 0 1rem 1rem 0;
+ height: 4.25rem;
+ overflow: hidden;
+}
+.check  {
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  transition-duration: 0.5s;
+}
 .title {
   font-size: 1.5rem;
   font-family: roboto;
@@ -251,28 +267,35 @@ p {
     position: relative;
     width: 20rem;
   }
-  &__icon--empty {
+  &__icon {
     background-color: white;
     font-size: 2rem;
-    position: relative;
-    bottom: 5.5rem;
-    left: 15rem;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 17rem;
     width: 2rem;
   }
-  &__icon--empty:hover {
-    opacity: 0.5sec; 
-    transition: 2sec ease;
-}
+  &__icon--empty {
+    opacity: 1; 
+    transition: opacity 2sec ease;
+    position:absolute;
+  }
   &__icon--full {
+    position: absolute;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
-    font-size: 2rem;
-    position: relative;
-    bottom: 3.5rem;
-    left: 15rem;
-    width: 2rem;
-    background-clip: inherit;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  &__icon:hover{
+    .card__icon--empty {
+      transition: opacity 2sec ease;
+      opacity: 0;
+    }
+    .card__icon--full  {
+      transition: opacity 2sec ease;
+      opacity: 1;
+    }
   }
 }
 .restaurant__section {
@@ -285,61 +308,29 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
-  -webkit-box-align: center;
+  box-align: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
 
 }
-.restaurant__section a {
+.restaurant__section {
+  a {
   text-decoration: none;
   color: black;
+  }
 }
 h3 {
   font-size: 1.2rem;
   font-weight: 900;
 }
-// .card__restaurant :hover{
-//   opacity:0.5;
-//   transition: 2s ease;
-// }
-// .menu {
-//   background-color: #f2f2f2;
-
-//   &__desserts {
-//     align-items: center;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 1rem;
-//   }
-//   &__main_dish {
-//     align-items: center;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 1rem;
-    
-    
-//   }
-//   &__price  {
-//     font-size: 0.8rem;
-//     position: relative;
-//     float: right;
-//     bottom: 3rem;
-//     right: 0.5rem;
-//   }
-//   &__item h4  {
-//     font-size: 0.8rem;
-//     font-weight: 300;
-//     position: relative;
-//     bottom: 0.5rem;
-//   }
-// }
 
 footer .container{
 display: flex;
 flex-direction: column;
 height: 12rem;
-align-items: center;
+padding-left: 1rem;
+padding-bottom: 2rem;
 justify-content: space-around;
 background-color: #252525;
 gap: 0.5rem;
