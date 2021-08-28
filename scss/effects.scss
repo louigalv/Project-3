@@ -1,0 +1,16 @@
+.menu__entrees {
+  animation: fadeIn 4s;
+    transform: translateY(0);
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

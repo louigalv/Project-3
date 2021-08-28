@@ -1,13 +1,4 @@
-.menu__entrees {
-	animation: fadeIn 3s;
-  	opacity: 1;
-}
-
-@keyframes fadeIn {
-  from {
-  	opacity: 0;
-  }
-  to {
- 	opacity: 1;
-  }
-}
+$main-clr: #DD3399;
+$border-clr: #9356dc;
+$font-stack: roboto, sans-serif;
+$background-clr: #f2f2f2;
