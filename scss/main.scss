@@ -13,6 +13,7 @@ body {
 }
 .header {
   text-align: center;
+  position: relative;
   background-color: $background-clr;
 
   &__logo {
@@ -46,6 +47,15 @@ body {
   }
   &__button {
     padding: 1rem;
+  }
+  &__navigation {
+    position: relative;
+  }
+  &__arrow  {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    color: black;
   }
  }
  .header i {
@@ -135,9 +145,10 @@ p {
   }
   &__menu__background h2 {
     margin-left: 2rem;
-    border-bottom: 3px solid #99e2d0;
     padding: 1rem;
-    width: 8rem;
+  }
+  &__menu__background h2 span {
+   border-bottom: 3px solid #99e2d0;
   }
   
 }
@@ -155,14 +166,13 @@ p {
     gap: 1rem;
   }
   &__item {
-    box-shadow: 1px 7px 15px 5px;
     background-color: white;
     border-radius: 1rem;
     height: 3.25rem;
     line-height: 0.9rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    width: 18rem;
+    width: 19rem;
     display: flex;
     overflow: hidden;
   }
@@ -182,10 +192,11 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
   }
   &__text h4  {
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.795rem;
+    font-weight: 100;
     position: relative;
     bottom: 0.5rem;
     white-space: nowrap;
@@ -214,6 +225,8 @@ p {
   transition: transform 1s;
 }
 .menu__item:hover {
+  cursor: pointer;
+
   .menu__text {
     width: 55%;
     transition: width 1s ease-in-out;
@@ -286,7 +299,7 @@ p {
     background-color: white;
     font-size: 2rem;
     position: absolute;
-    bottom: 3.5rem;
+    top: 12rem;
     left: 17rem;
     width: 2rem;
   }
@@ -356,4 +369,22 @@ footer a{
 }
 .footer__title  {
   font-family: shrikhand;
+}
+@media only screen and (min-width: 1040px) {
+  .menu__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+  }
 }
