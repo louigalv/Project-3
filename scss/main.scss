@@ -382,9 +382,14 @@ p {
   }
 }
 h3 {
-  font-size: 1.2rem;
   font-weight: 900;
+  font-family: sans-serif, 'Roboto';
 }
+.button {
+  justify-content: center;
+  background-color: #f2f2f2;
+  display: flex;
+  }
 
 footer .container{
 display: flex;
@@ -423,7 +428,4 @@ footer a{
     justify-content: space-around;
     margin: 1rem;
   }
-  .button {
-    padding-left: 30%;
-    }
 }
