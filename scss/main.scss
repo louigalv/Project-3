@@ -142,6 +142,7 @@ p {
   }
   &__menu__background h1 {
     margin-left: 2rem;
+    padding-top: 1.4rem;
   }
   &__menu__background h2 {
     margin-left: 2rem;
@@ -422,4 +423,7 @@ footer a{
     justify-content: space-around;
     margin: 1rem;
   }
+  .button {
+    padding-left: 30%;
+    }
 }
