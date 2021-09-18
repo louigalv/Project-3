@@ -167,9 +167,10 @@ p {
   }
   &__item {
     background-color: white;
+    box-shadow: 1px 5px 5px 4px rgba($color: #b9b5b5, $alpha: 1.0);
     border-radius: 1rem;
     height: 3.25rem;
-    line-height: 0.9rem;
+    line-height: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     width: 19rem;
@@ -202,6 +203,7 @@ p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: grey;
   }
 }
 .overlay  {
@@ -303,6 +305,14 @@ p {
     left: 17rem;
     width: 2rem;
   }
+  &__heart  {
+      background-color: white;
+      font-size: 2rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 2rem;
+  }
   &__icon--empty {
     opacity: 1; 
     transition: opacity 2sec ease;
@@ -321,6 +331,28 @@ p {
       opacity: 0;
     }
     .card__icon--full  {
+      transition: opacity 2sec ease;
+      opacity: 1;
+    }
+  }
+  &__heart--empty {
+    opacity: 1; 
+    transition: opacity 2sec ease;
+    position:absolute;
+  }
+  &__heart--full {
+    position: absolute;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  &__heart:hover{
+    .card__heart--empty {
+      transition: opacity 2sec ease;
+      opacity: 0;
+    }
+    .card__heart--full  {
       transition: opacity 2sec ease;
       opacity: 1;
     }
@@ -362,6 +394,9 @@ padding-bottom: 2rem;
 justify-content: space-around;
 background-color: #252525;
 gap: 0.5rem;
+}
+.container__icon  {
+  width: 30px;
 }
 footer a{
   color: #f2f2f2;
