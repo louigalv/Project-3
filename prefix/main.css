@@ -244,6 +244,7 @@ p {
   width: 25%;
   flex: none;
   padding-top: 1.6rem;
+  text-align: center;
 }
 .menu__text {
   flex: none;
@@ -366,7 +367,7 @@ p {
 }
 .card__icon {
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
   position: absolute;
   top: 12rem;
   left: 17rem;
@@ -432,7 +433,6 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
-  box-align: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
@@ -496,6 +496,11 @@ footer a {
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main__menu__background h2 {
+    text-align: center;
   }
 }
 
