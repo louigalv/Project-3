@@ -317,7 +317,7 @@ p {
   }
   &__icon--empty {
     opacity: 1; 
-    transition: opacity 2sec ease;
+    transition: opacity 0.5s ease;
     position:absolute;
   }
   &__icon--full {
@@ -329,17 +329,17 @@ p {
   }
   &__icon:hover{
     .card__icon--empty {
-      transition: opacity 2sec ease;
+      transition: opacity 0.5s ease;
       opacity: 0;
     }
     .card__icon--full  {
-      transition: opacity 2sec ease;
+      transition: opacity 0.5s ease;
       opacity: 1;
     }
   }
   &__heart--empty {
     opacity: 1; 
-    transition: opacity 2sec ease;
+    transition: opacity 0.5s ease;
     position:absolute;
   }
   &__heart--full {
@@ -351,11 +351,11 @@ p {
   }
   &__heart:hover{
     .card__heart--empty {
-      transition: opacity 2sec ease;
+      transition: opacity 0.5s ease;
       opacity: 0;
     }
     .card__heart--full  {
-      transition: opacity 2sec ease;
+      transition: opacity 0.5s ease;
       opacity: 1;
     }
   }
